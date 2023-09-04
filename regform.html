@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Registration Form </title>
+    </head>
+    <link rel="stylesheet" href="regform.css">
+    <body>
+        <div class="center">
+            <fieldset>
+                <h2> </h2>
+
+                <legend style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"> Fill the details </legend>
+                <br>
+                <br>
+
+                <label for="fname">Full name</label>
+                <br>
+                <br>
+                <input type="text" id="fname" name="fname" placeholder="first-name" required>
+                <input type="text" id="mname" name="mname" placeholder="middle-name">
+                <input type="text" id="lname" name="lname" placeholder="last-name" required>
+                <br>
+                <br>
+            
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+                <br>
+                <br>
+            
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender">
+                    <option value="--Choose--" selected>--Choose--</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
+                </select>
+                <br>
+                <br>
+
+                <label for="pno">Phone number</label>
+                <input type="text" id="pno" name="pno" placeholder="Enter 10 digit number" pattern="[0-9] {10}" required>
+                <br>
+                <br>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="sample@gmail.com" required>
+                <br>
+                <br>
+
+                <label for="uname">Username</label>
+                <input type="text" id="uname" name="uname" placeholder="Enter unique id" required>
+                <br>
+                <br>
+
+                <label for="pass">Password</label>
+                <input type="password" id="pass" name="pass" placeholder="Enter a strong password" required>
+                <br>
+                <br>
+
+                <label for="cpass">Confirm Password</label>
+                <input type="password" id="cpass" name="cpass" placeholder="Confirm password" required>
+                <br>
+                <br>
+                <hr>
+
+                <div class="innercenter">
+                    <br>
+                    <input type="checkbox" required>
+                    <label for="check">Details are correct</label>
+
+                    <input type="button" id="button" style="background-color: #4CAF50;" value="Submit" onclick="alert('Form Submitted Successfully')">
+                    <br>
+                    <br>
+                </div>
+            </fieldset>
+        </div>
+    </body>
+</html>
